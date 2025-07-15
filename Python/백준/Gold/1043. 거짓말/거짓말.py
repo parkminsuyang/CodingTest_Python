@@ -20,9 +20,6 @@ def union(a,b):
 
 parties=[]
 
-for i in range(len(truth) - 1):
-    union(truth[i], truth[i+1])
-
 for _ in range(m):
     p=list(map(int,input().split()))
     party=p[1:]
@@ -42,4 +39,3 @@ for party in parties:
     if isTrue==False:
         res+=1
 print(res)
-
